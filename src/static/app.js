@@ -440,11 +440,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       // Apply difficulty filter
-      if (currentDifficulty !== "") {
-        // Activities without a difficulty level are for all levels, so they always pass
-        if (details.difficulty && details.difficulty !== currentDifficulty) {
-          return;
-        }
+      if (currentDifficulty !== "" && details.difficulty && details.difficulty !== currentDifficulty) {
+        return;
       }
 
       // Apply search filter
