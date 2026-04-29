@@ -32,6 +32,36 @@
   --info-light: #d1ecf1;
 }
 
+/* Dark mode theme */
+[data-theme="dark"] {
+  --primary: #3949ab;
+  --primary-light: #6f74dd;
+  --primary-dark: #00227b;
+  --primary-text: #ffffff;
+
+  --secondary: #ffa040;
+  --secondary-light: #ffd180;
+  --secondary-dark: #c67100;
+  --secondary-text: #000000;
+
+  --background: #121212;
+  --surface: #1e1e1e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #aaaaaa;
+  --border: #404040;
+  --border-light: #2c2c2c;
+  --border-focus: #505050;
+
+  --success: #4caf50;
+  --success-light: #1b3a1c;
+  --warning: #ffa726;
+  --warning-light: #3d2a00;
+  --error: #ef5350;
+  --error-light: #3b1010;
+  --info: #4fc3f7;
+  --info-light: #0d2a38;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -617,6 +647,15 @@ footer {
   position: absolute;
   top: 10px;
   right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#dark-mode-toggle {
+  padding: 4px 10px;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 #user-status {
